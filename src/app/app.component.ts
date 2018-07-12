@@ -35,7 +35,7 @@ export class AppComponent {
     });
   }
 
-  private start() {
+  public start() {
     this._ngZone.run(() => {
       this.isShow = true;
       this.timer = setInterval(() => {
@@ -45,7 +45,7 @@ export class AppComponent {
     });  
   }
 
-  private stop() {
+  public stop() {
     clearInterval(this.timer);
   }
  
